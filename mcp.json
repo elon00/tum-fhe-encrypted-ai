@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "tum-fhe-encrypted-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "TUM Munich",
+        "PROJECT_TICKER": "TUMFHE"
+      },
+      "tools": [
+        {
+          "name": "verify_tumfhe_invariants",
+          "description": "Verifies deterministic invariants for TUM FHE Encrypted AI on TUM Munich."
+        },
+        {
+          "name": "execute_tumfhe_action",
+          "description": "Executes authenticated Cryptography state transition."
+        }
+      ]
+    }
+  }
+}
